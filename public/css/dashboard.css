@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #0066cc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navbar img {
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+  }
+  
+  .user-info {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    margin-right: 20px;
+    color: white;
+  }
+  .navbar .icon {
+    position: absolute;
+    top: 10px;
+    height: 30px;
+  }
+  
+  .logout {
+    right: 70px;
+  }
+  
+  .settings {
+    right: 120px;
+  }
+  .badges {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .badges h2 {
+    margin-top: 0;
+  }
+  
+  .badge {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333333;
+    border-radius: 5px;
+  }
+  
+  .badge.gold {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .badge.silver {
+    background-color: #c0c0c0;
+    color: white;
+  }
+  
+  .badge.bronze {
+    background-color: #cd7f32;
+    color: white;
+  }
+  .analog-clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .hour-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 60px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 2px;
+    transform-origin: left center;
+    z-index: 3;
+  }
+  /* Define the styles for the clock container */
+.clock-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Define the styles for the clock face */
+  .clock-face {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1),
+                inset 0 0 0 3px #fff,
+                inset 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Define the styles for the clock hands */
+  .clock-hand {
+    width: 50%;
+    height: 6px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 100% 50%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+  }
+  
+  /* Define the styles for the hour hand */
+  .hour-hand {
+    width: 30%;
+    z-index: 5;
+  }
+  
+  /* Define the styles for the minute hand */
+  .minute-hand {
+    width: 40%;
+    z-index: 10;
+  }
+  
+  /* Define the styles for the second hand */
+  .second-hand {
+    width: 45%;
+    height: 2px;
+    background-color: #f00;
+    z-index: 15;
+  }
